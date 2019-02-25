@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css\main2.css">
+    <title>The Battle</title>
+</head>
+<body>
+    <ul>
+        <li><a href="https://github.com/AnoopBharadwaj/Assignment_LookAndFeel">GitHub</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="thebattle.html">The Battle</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+
+    <script>
+        function switchTab(id) {
+            let containerId = document.getElementById("contentContainer");
+            containerId.scrollTop = 0;
+            switch (id) {
+                case 1:
+                    containerId.innerHTML = `<p>
+                                    iOS, a system Apple developed specifically for Apple's own mobile devices in 2007, has been available for iPhone and iPad. The first iOS was designed for Apple's first generation of mobile phones. It is this extraordinary system that has made the mobile phone industry a revolutionary development, and that even has allowed Apple to surpass the once-dominant handset industry.
+                                </p>
+                                <p>
+                                    Android, a system developed by Andy Rubin in 2003 and later acquired by Google in 2005, has seen dramatic improvements since 2007, making it known worldwide. Today, the development ofAndroid system is based on Linux. The initial version of the interface is too simple, and some details are modeled on iOS, such as the function of sliding to unlock. Steve Jobs wasalso so rampant with Google and repeated lawsuits to destroy it, but eventually failed. After several years of continuous improvements in its operation, interface, details and otheraspects, with the addition of the advantages of open source systems, it ultimately defeated Symbian as the dominant mobile phone system.
+                                </p>
+                                <div class="imageContiner">
+                                    <!-- <div class="images">image1</div>
+                                    <div class="images">image2</div> -->
+                                    <img class="images1" style = "width: 350px; height : 300px" src="img/early1.jpg" alt="Italian Trulli">
+                                    <img class="images1" style = "width: 350px; height : 300px" src="img/early2.jpg" alt="Italian Trulli">
+                                 </div>`
+                    break;
+                case 2:
+                    containerId.innerHTML = `
+                                <p style="font-family: 'Orbitron', sans-serif;">
+                                    The biggest difference between them is the closed source system and open source system. iOS is a closed source system, which means that no one except Apple can use it privately, andthat there is merely the official version of the system. And Android is an open source system, which means that anyone can use and modify it. Therefore, Android has a lot of goodrevisions, such as CM, MIUI, etc., and any mobile phone manufacturers can use the Android system.
+                                </p>
+                                <p style="font-family: 'Orbitron', sans-serif;">
+                                    Android O: You can zoom out video or Google Maps navigation to floating thumbnails so you can continue doing other things while looking at them (this feature is called "Picture inPicture"); you can automatically select names, phone numbers, addresses or business information to copy and paste; new application notification feature allow you to press and hold theapplication icon to expand the information and browse the warning content.
+                                </p>
+                                <p style="font-family: 'Orbitron', sans-serif;">
+                                    iOS 11: you can pay your friends with Apple Pay in iMessage; you can play multiple indoor speakers; you can browse all the new features.
+                                </p>
+                                <div class="imageContiner">
+                                    <!-- <div class="images">image1</div>
+                                    <div class="images">image2</div> -->
+                                    <img class="images2" style = "width: 350px; height : 300px"src="img/pros1.png" alt="Italian Trulli">
+                                    <img class="images2" style = "width: 350px; height : 300px"src="img/pros2.jpg" alt="Italian Trulli">
+                                </div>
+                            `
+                    break;
+                case 3:
+                    containerId.innerHTML = `<p>
+                            <div class="imageContiner">
+                                    <!-- <div class="images">image1</div>
+                                    <div class="images">image2</div> -->
+                                    <img class="images3" style = "width: 350px; height : 300px"src="img/marketshareDIS2.jpg" alt="Italian Trulli">
+                                    </div>
+                                </p>
+
+                            `
+                    break;
+                case 4:
+                    containerId.innerHTML = `<p><div class="imageContiner">
+                                    <!-- <div class="images">image1</div>
+                                    <div class="images">image2</div> -->
+                                    <img class="images4" src="img/littleHelp.jpg" style="width:400px; margin-top: 280px; display: block;"
+                                    alt="Italian Trulli">
+                                    </div>
+                            </p>
+                            `
+                    break;
+            }
+        }
+
+    </script>
+    <main>
+        <div class="mainContainer">
+            <div class="tabContainer">
+                <div onclick="switchTab(1)" id="1" class="tab clickStyle">Early Years</div>
+                <div onclick="switchTab(2)" id="2" class="tab">Pros & Cons</div>
+                <div onclick="switchTab(3)" id="3" class="tab">Market Share</div>
+                <div onclick="switchTab(4)" id="4" class="tab">A Little Help</div>
+            </div>
+            <div id="contentContainer" class="contentContainer">
+                <p style="font-family: 'Orbitron', sans-serif;">
+                    iOS, a system Apple developed specifically for Apple's own mobile devices in 2007, has been available for iPhone and iPad. The first iOS was designed for Apple's first generation of mobile phones. It is this extraordinary system that has made the mobile phone industry a revolutionary development, and that even has allowed Apple to surpass the once-dominant handset industry.
+                </p>
+                <p style="font-family: 'Orbitron', sans-serif;">
+                    Android, a system developed by Andy Rubin in 2003 and later acquired by Google in 2005, has seen dramatic improvements since 2007, making it known worldwide. Today, the development ofAndroidsystem is based on Linux. The initial version of the interface is too simple, and some details are modeled on iOS, such as the function of sliding to unlock. Steve Jobs wasalso so rampantwith Google and repeated lawsuits to destroy it, but eventually failed. After several years of continuous improvements in its operation, interface, details and otheraspects, with the additionof the advantages of open source systems, it ultimately defeated Symbian as the dominant mobile phone system.
+                </p>
+                <div class="imageContiner">
+                    <!-- <div class="images">image1</div>
+                    <div class="images">image2</div> -->
+                    <img class="images" style="width: 350px; height : 300px" src="img/early1.jpg" alt="Italian Trulli">
+                    <img class="images" style="width: 350px; height : 300px" src="img/early2.jpg" alt="Italian Trulli">
+                </div>
+            </div>
+        </div>
+    </main>
+    <p1>
+        Made by: Anoop, Divesh and Kareem
+    </p1>
+</body>
+</html>
